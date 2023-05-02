@@ -62,13 +62,26 @@
                 font-size: 16px;
                 color: rgb(185, 175, 175);
             }
-            .btn {
-                width: 100px;
-                background: rgba(54, 92, 214, 0.63);
-                color: rgb(255, 255, 255);
-                margin-top: 20px;
+
+            .send {
                 align-self: flex-end;
+                border: 1px dashed rgba(54, 92, 214, 0.63); 
+                margin-top: 20px;
+                padding: 5px;
+
+                .btn {
+                    width: 100px;
+                    background: transparent;
+                    color: rgb(255, 255, 255);
+                    border-radius: 0%;
+                    border: 1px solid rgba(185, 175, 175, 0.699);
+    
+                    &:hover {
+                        background: rgba(54, 92, 214, 0.63);
+                    }
+                }
             }
+            
         }
         .alternative {
             display: flex;
@@ -81,16 +94,28 @@
                 display: flex;
                 gap: 10px;
                 font-size: 25px;
+
+                .icon {
+                    color: rgba(54, 92, 214, 0.63);
+                }
             }
             .location {
                 display: flex;
                 gap: 10px;
                 font-size: 25px;
+
+                .icon {
+                    color: rgba(54, 92, 214, 0.63);
+                }
             }
             .call {
                 display: flex;
                 gap: 10px;
                 font-size: 25px;
+
+                .icon {
+                    color: rgba(54, 92, 214, 0.63);
+                }
             }
         }
     }

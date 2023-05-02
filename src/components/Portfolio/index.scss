@@ -1,0 +1,77 @@
+.portfoilio {
+    background: rgb(22, 22, 22);
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto;
+        color: rgba(54, 92, 214, 0.63);
+        border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
+        width: 70%;
+        padding: 5px 0;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+        .icon {
+            font-size: 2.5rem;
+        }
+    }
+
+    .projects {
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .projectImage {
+                width: 20vw;
+
+                
+                img {
+                    width: 180px;
+                }
+            }
+
+            .projectDesc {
+                
+                position: absolute;
+                background: rgba(31, 73, 211, 0.918);
+                height: 160px;
+                display: none;
+                
+                h1 {
+                    font-size: 18px;
+                    color: white;
+                    position: relative;
+                    top: 50%;
+                }
+                p {
+                    color: rgb(255, 255, 255);
+                    display: flex;
+                    position: relative;
+                    top: 65%;
+                    padding: 0 10px;
+                    gap: 5px;
+                    
+                }
+
+                
+            }
+        }
+    }
+}

@@ -50,7 +50,9 @@ const Profile = () => {
                         <span className="dots">:</span>
                         <span className="value">Available</span>
                     </div>
-                    <button className="btn">Download Resume</button>
+                    <div className="rsm">
+                        <button className="btn">Download Resume</button>
+                    </div>
                 </div>
             </div>
 
@@ -65,12 +67,12 @@ const Profile = () => {
                         <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
                     </div>
                     <div className="serviceList">
-                        <FontAwesomeIcon icon={faMobileScreen} className="icon"/>
+                        <FontAwesomeIcon icon={faMobileScreen} className="icon" />
                         <h4>Responsive Design</h4>
                         <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
                     </div>
                     <div className="serviceList">
-                        <FontAwesomeIcon icon={faHeadset} className="icon"/>
+                        <FontAwesomeIcon icon={faHeadset} className="icon" />
                         <h4>Audio Engineer</h4>
                         <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
                     </div>

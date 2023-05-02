@@ -42,9 +42,20 @@
          width: 100%;
          padding: 10px 20px;
 
+         .icon {
+            &:hover {
+               color: rgba(31, 73, 211, 0.63);
+            }
+         }
+
          label {
             cursor: pointer;
+
+            &:hover {
+               color: rgba(31, 73, 211, 0.63);
+            }
          }
+         
          
       }
     }
@@ -58,6 +69,10 @@
       a {
          color: rgb(185, 175, 175);
          text-decoration: none;
+
+         &:hover {
+            color: rgba(31, 73, 211, 0.63);
+         }
       }
     }
     footer {
