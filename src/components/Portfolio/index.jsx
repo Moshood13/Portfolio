@@ -95,16 +95,14 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="link">
-                        <a href="" className="link1" title="view source code"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="" className="link2" title="view demo"><FontAwesomeIcon icon={faCodepen} /></a>
+                        <a href="https://github.com/Moshood13/Javascript/tree/Todo" className="link1" title="view source code" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://codepen.io/Moshood13/pen/gOBvYeJ" className="link2" title="view demo" target="_blank"><FontAwesomeIcon icon={faCodepen} /></a>
                     </div>
                 </div>
                 <div className="project">
-                    <a href="">
                         <div className="projectImage">
                             <img src={Pic4} alt="" />
                         </div>
-                    </a>
                     <div className="projectDesc">
                         <h1>Quiz App</h1>
                         <p> Technologies :
@@ -126,8 +124,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="link">
-                        <a href="" className="link1" title="view source code"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://codepen.io/Moshood13/pen/wvYpNVM" className="link2" title="view demo"><FontAwesomeIcon icon={faCodepen} /></a>
+                        <a href="https://github.com/Moshood13/Javascript" className="link1" title="view source code" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://codepen.io/Moshood13/pen/wvYpNVM" className="link2" title="view demo" target="_blank"><FontAwesomeIcon icon={faCodepen} /></a>
                     </div>
                 </div>
                 <div className="project">
@@ -148,10 +146,8 @@ const Portfolio = () => {
                         <div className="details">
                             <h4>Features : </h4>
                             <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Genrate Random quotes</li>
+                                <li>Tweet Quotes</li>
                             </ol>
                         </div>
                     </div>
@@ -162,7 +158,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="link">
-                <p>To view more <span><em>projects</em></span> click <a href="">here</a></p>
+                <p>To view more <span><em>projects</em></span> click <a href=""> <button disabled="disabled" className="btn">here</button></a></p>
             </div>
         </div>
     )

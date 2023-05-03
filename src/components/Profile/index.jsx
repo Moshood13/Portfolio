@@ -3,6 +3,7 @@ import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset, faLaptop, faLaptopCode, faMobileScreen, faUser } from "@fortawesome/free-solid-svg-icons";
 import cv from "../../Assets/files/MoshoodKareem.pdf"
+import { Link } from "react-router-dom";
 
 const Profile = () => {
     return (
@@ -15,9 +16,14 @@ const Profile = () => {
                 <div className="PS">
                     <h2>Front-End Developer</h2>
                     <br />
-                    <p>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate eDolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerumDolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerumst vel. Dolorem praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum</p>
+                    <p>I am Moshood Kareem, a skilled and dedicated Front-end Developer with entry level experience in designing, developing and maintaining front-end web applications, endowed with efficient knowledge and effective use of web development skills such Html, CSS, Javascript and React amongst others. Adept at contributing to a highly collaborative work environment, identify problems, find solutions and ensure maximum customer's satisfaction.</p>
                     <br />
-                    <p>Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit porro praesentium excepturi. Alias ab consequatur?</p>
+                    <p>I am keen and willing to gain more experience and knowledge on the field by working with experienced and top level developers. For this reason, i am open to any company willing to offer me a placement to become one of the team members and in return, i would offer my full commitment and be a pleasant, hardworking, friendly and great addition to your team. </p>
+                    <br />
+                    <p>I am therefore currently looking for a job or an intership as a Front-end Developer. </p>
+                    <Link to="/contact">
+                            <button className="ct btn">Contact</button>
+                        </Link>
                 </div>
                 <div className="PD">
                     <h2>Personal Information</h2>
@@ -67,17 +73,17 @@ const Profile = () => {
                     <div className="serviceList">
                         <FontAwesomeIcon icon={faLaptopCode} className="icon" />
                         <h4>Web Development</h4>
-                        <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                        <p>Deliver high quality service and consistent business results with a resourceful approach to handling routine and complex issues.</p>
                     </div>
                     <div className="serviceList">
                         <FontAwesomeIcon icon={faMobileScreen} className="icon" />
                         <h4>Responsive Design</h4>
-                        <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                        <p> Web developer in creating  responsive web applications that can display on desktop, laptop and also on all mobile devices.</p>
                     </div>
                     <div className="serviceList">
                         <FontAwesomeIcon icon={faHeadset} className="icon" />
                         <h4>Audio Engineer</h4>
-                        <p>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero.</p>
+                        <p>A passionate audio enginner with good skills and knowledge on audio editing softwares like Adobe audition, Sonar, Fl-studio, Cubase and many more.</p>
                     </div>
                 </div>
             </div>

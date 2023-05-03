@@ -44,6 +44,11 @@
             flex-direction: column;
             border-right: 2px dotted rgba(204, 199, 199, 0.315);
             height: 70vh;
+
+            .ct {
+                margin: 20spx 0;
+                background: rgb(54, 91, 214);;
+            }
         }
 
         .PD {
@@ -82,7 +87,7 @@
                 border-radius: 0%;
                 width: 160px;
                 display: flex;
-                margin: 0 auto;
+                margin: 10px auto;
                 padding: 5px;
 
                 a {
