@@ -66,7 +66,7 @@ const Resume = () => {
             </div>
             <div className="overview">
                 <div className="text">
-                    <p>Enthusiastic <span>Front-end Developer</span> eager to contribute to team success thorugh hard work, attention to detail and excellent organizational skills. Motivated to learn, grow and excel in <span>Web development</span> and <span>Programming</span>. Deliver high-quality service and consistently provides satisfactory job results with a resourceful approach to handling routine and complex challenges</p>
+                    <p>Enthusiastic <span>Front-end Developer</span> eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Motivated to learn, grow and excel in <span>Web development</span> and <span>Programming</span>. Deliver high-quality service and consistently provides satisfactory job results with a resourceful approach to handling routine and complex challenges.</p>
                 </div>
             </div>
             <div className="edu">

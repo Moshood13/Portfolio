@@ -1,9 +1,9 @@
 .contact {
     background: rgb(22, 22, 22);
     width: 100%;
-    height: 100vh;
     position: absolute;
     z-index: -1;
+    animation: transition 2s;
 
     .contactDetails {
         display: flex;
@@ -13,11 +13,12 @@
         border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
         width: 70%;
         padding: 5px 0;
-        
+
 
         h1 {
             font-size: 2.5rem;
         }
+
         .icon {
             font-size: 2.5rem;
         }
@@ -28,7 +29,7 @@
         margin: 20px 210px;
         flex-direction: row;
         padding: 0 20px;
-        
+
 
         h2 {
             color: rgb(185, 175, 175);
@@ -44,6 +45,7 @@
                 outline-offset: 3px;
             }
         }
+
         form {
             display: flex;
             flex-direction: column;
@@ -63,30 +65,28 @@
                 color: rgb(185, 175, 175);
             }
 
-            .send {
+
+            .btn {
                 align-self: flex-end;
-                border: 1px dashed rgba(54, 92, 214, 0.63); 
+                width: 100px;
+                background: transparent;
+                color: rgb(255, 255, 255);
+                border-radius: 0%;
+                border: 1px solid rgba(185, 175, 175, 0.699);
                 margin-top: 20px;
                 padding: 5px;
 
-                .btn {
-                    width: 100px;
-                    background: transparent;
-                    color: rgb(255, 255, 255);
-                    border-radius: 0%;
-                    border: 1px solid rgba(185, 175, 175, 0.699);
-    
-                    &:hover {
-                        background: rgba(54, 92, 214, 0.63);
-                    }
+                &:hover {
+                    background: rgba(54, 92, 214, 0.63);
                 }
             }
-            
+
         }
+
         .alternative {
             display: flex;
             flex-direction: column;
-            padding: 10px 20px ;
+            padding: 10px 20px;
             justify-content: space-around;
             color: rgb(185, 175, 175);
 
@@ -99,6 +99,7 @@
                     color: rgba(54, 92, 214, 0.63);
                 }
             }
+
             .location {
                 display: flex;
                 gap: 10px;
@@ -108,6 +109,7 @@
                     color: rgba(54, 92, 214, 0.63);
                 }
             }
+
             .call {
                 display: flex;
                 gap: 10px;
@@ -115,6 +117,140 @@
 
                 .icon {
                     color: rgba(54, 92, 214, 0.63);
+                }
+            }
+        }
+    }
+    @keyframes transition{
+        from {
+          opacity: 0;
+          transform: rotateX(-10deg);
+        } 
+        to {
+          opacity: 1;
+          transform: rotateX(0);
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+        width: 100%;
+
+
+        .contactDetails {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px unset;
+            color: rgba(54, 92, 214, 0.63);
+            border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
+            width: 70%;
+            padding: 10px 0;
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .icon {
+                font-size: 1.5em;
+            }
+        }
+
+        .form {
+            display: flex;
+            margin: 20px 0;
+            flex-direction: column;
+            padding: 0;
+
+
+            h2 {
+                color: rgb(185, 175, 175);
+                border: 1px dashed rgba(204, 199, 199, 0.315);
+                padding: 5px;
+                float: left;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 10px;
+
+                &:hover {
+                    background: rgba(54, 92, 214, 0.63);
+                    outline-offset: 3px;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                margin: 30px 0;
+                width: 100%;
+                gap: 10px;
+                border-right: unset;
+                padding-right: 15px;
+
+                .field {
+                    padding: 10px;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px dashed rgba(54, 92, 214, 0.63);
+                    font-size: 16px;
+                    color: rgb(185, 175, 175);
+                }
+
+
+                .btn {
+                    align-self: flex-end;
+                    width: 100px;
+                    background: transparent;
+                    color: rgb(255, 255, 255);
+                    border-radius: 0%;
+                    border: 1px solid rgba(185, 175, 175, 0.699);
+                    margin-top: 20px;
+                    padding: 5px;
+
+                    &:hover {
+                        background: rgba(54, 92, 214, 0.63);
+                    }
+                }
+
+            }
+
+            .alternative {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 20px;
+                justify-content: space-around;
+                color: rgb(185, 175, 175);
+                gap: 20px;
+
+                .email {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 25px;
+
+                    .icon {
+                        color: rgba(54, 92, 214, 0.63);
+                    }
+                }
+
+                .location {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 25px;
+
+                    .icon {
+                        color: rgba(54, 92, 214, 0.63);
+                    }
+                }
+
+                .call {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 25px;
+
+                    .icon {
+                        color: rgba(54, 92, 214, 0.63);
+                    }
                 }
             }
         }

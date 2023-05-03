@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationArrow, faLocationPin,  faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationArrow, faLocationPin, faPhone } from "@fortawesome/free-solid-svg-icons";
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
+
+    const refForm = useRef();
+
+    const SendEmail = (e) => {
+        e.preventDefault();
+        
+        emailjs.sendForm(
+            'service_01fzne6',
+            'template_xbrfnmo',
+            refForm.current,
+            '97ibF4eazIK-D_jtb').then(
+                () => {
+                    alert('Message succesfully sent')
+                    window.location.reload(false)
+                },
+                (error) => {
+                    alert('Failed to send message, please try again')
+                }
+            )
+    }
+
     return (
         <div className="contact">
             <div className="contactDetails">
@@ -12,14 +35,12 @@ const Contact = () => {
             </div>
 
             <div className="form">
-                <form action="">
+                <form ref={refForm} onSubmit={SendEmail}>
                     <h2>Send A Message</h2>
-                    <input type="text" name="text" id="text" placeholder="Name" className="field" />
-                    <input type="email" name="email" id="email" placeholder="Email" className="field" />
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" className="field" />
-                    <div className="send">
-                    <input type="button" value="Send" className="btn" />
-                    </div>                    
+                    <input type="text" name="text" id="text" placeholder="Name" className="field" required />
+                    <input type="email" name="email" id="email" placeholder="Email" className="field" required />
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" className="field" required />
+                    <input type="submit" value="Send" className="btn" />
                 </form>
                 <div className="alternative">
                     <div className="email">

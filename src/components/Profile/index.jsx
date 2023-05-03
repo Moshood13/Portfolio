@@ -2,6 +2,7 @@ import React from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeadset, faLaptop, faLaptopCode, faMobileScreen, faUser } from "@fortawesome/free-solid-svg-icons";
+import cv from "../../Assets/files/MoshoodKareem.pdf"
 
 const Profile = () => {
     return (
@@ -51,7 +52,9 @@ const Profile = () => {
                         <span className="value">Available</span>
                     </div>
                     <div className="rsm">
+                        <a href={cv} target="_blank" >
                         <button className="btn">Download Resume</button>
+                        </a>                        
                     </div>
                 </div>
             </div>

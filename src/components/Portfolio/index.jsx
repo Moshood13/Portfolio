@@ -13,22 +13,6 @@ const Portfolio = () => {
                 <FontAwesomeIcon icon={faBriefcase} className="icon" />
             </div>
             <div className="projects">
-            <div className="project">
-                    <div className="projectImage">
-                        <img src={Pic1} alt="" />
-                    </div>
-                    <div className="projectDesc">
-                        <h1>Basic Calculator</h1>
-                        <p>
-                            <span>Html</span>
-                            <span>Css</span>
-                            <span>Javascript</span>
-                        </p>
-                    </div>
-                    <div className="button">
-                        <button></button>
-                    </div>
-                </div>
                 <div className="project">
                     <div className="projectImage">
                         <img src={Pic1} alt="" />
@@ -94,7 +78,20 @@ const Portfolio = () => {
                         </p>
                     </div>
                 </div>
-               <div className="project">
+                <div className="project">
+                    <div className="projectImage">
+                        <img src={Pic1} alt="" />
+                    </div>
+                    <div className="projectDesc">
+                        <h1>Basic Calculator</h1>
+                        <p>
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>Javascript</span>
+                        </p>
+                    </div>
+                </div>
+                <div className="project">
                     <div className="projectImage">
                         <img src={Pic1} alt="" />
                     </div>
@@ -134,6 +131,9 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
+                <div className="link">
+                    <p>To view more <span><em>projects</em></span> click <a href="">here</a></p>
+                </div>
         </div>
     )
 }

@@ -1,14 +1,37 @@
 .sidebar {
-    width: 150px;
-    background-color: rgb(51, 51, 51);
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    min-width: 150px;
+   display: flex;
+   position: absolute;
+   width: 100%;
 
-    .logo {
+
+
+   .bars {
+      font-size: 1.5em;
+      position: absolute;
+      left: 90%;
+      margin-top: 20px;
+      color: rgb(185, 175, 175);
+      outline: none;
+      visibility: hidden;
+      opacity: 0;
+      border: none;
+      cursor: pointer;
+
+   }
+
+   nav {
+      background-color: rgb(51, 51, 51);
+      height: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      min-width: 150px;
+      gap: 10px;
+
+
+
+      .logo {
          display: flex;
          flex-direction: column;
 
@@ -16,74 +39,118 @@
             width: 150px;
             height: 150px;
          }
+
          .logoName {
             top: 90%;
             font-size: 8px;
             background: rgba(31, 73, 211, 0.63);
             width: 100%;
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             padding: 5px;
             opacity: 1;
-         }
-    }
-    nav {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 0;
-      gap: 10px;
+            text-align: center;
+            letter-spacing: px;
 
-      .linkdetails {
-         color: rgb(185, 175, 175);
-         text-decoration: none;
+         }
+      }
+
+      .nav {
          display: flex;
-         gap: 15px;
+         flex-direction: column;
+         margin: 20px 0;
+         gap: 10px;
+
+         .linkdetails {
+            color: rgb(185, 175, 175);
+            text-decoration: none;
+            display: flex;
+            gap: 15px;
+            font-size: 18px;
+            border-bottom: 1px solid rgb(185, 175, 175);
+            padding: 10px 20px;
+
+            .icon {
+               &:hover {
+                  color: rgba(31, 73, 211, 0.63);
+               }
+            }
+
+            label {
+               cursor: pointer;
+
+               &:hover {
+                  color: rgba(31, 73, 211, 0.63);
+               }
+            }
+         }
+
+
+
+
+
+      }
+
+      .mediaIcons {
+         display: flex;
+         justify-content: space-between;
+         padding: 0 15px;
+         margin: auto 0;
          font-size: 18px;
-         border-bottom: 1px solid rgb(185, 175, 175);
-         width: 100%;
-         padding: 10px 20px;
 
-         .icon {
-            &:hover {
-               color: rgba(31, 73, 211, 0.63);
-            }
-         }
-
-         label {
-            cursor: pointer;
+         a {
+            color: rgb(185, 175, 175);
+            text-decoration: none;
 
             &:hover {
                color: rgba(31, 73, 211, 0.63);
             }
          }
-         
-         
       }
-    }
-    .mediaIcons {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 15px;
-      margin: auto 0;
-      font-size: 18px;
 
-      a {
+      footer {
+         font-size: 12px;
+         margin: 10px 0;
+         text-align: center;
+         padding: 10px 1px;
+         line-height: 20px;
          color: rgb(185, 175, 175);
-         text-decoration: none;
 
-         &:hover {
-            color: rgba(31, 73, 211, 0.63);
+         span {
+            padding: 0 5px;
          }
       }
-    }
-    footer {
-      font-size: 12px;
-      margin: 10px 0;
-      text-align: center;
-      padding: 10px 1px;
-      line-height: 20px;
-      color: rgb(185, 175, 175);
-      span {
-         padding: 0 5px;
+   }
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+   .sidebar {
+
+      .bars {
+         visibility: visible;
+         opacity: 1;
+         position: fixed;
+
       }
-    }
+
+      .responsive_nav {
+         transform: none;
+      }
+
+      nav {
+         background-color: rgb(51, 51, 51);
+         height: 100%;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         position: fixed;
+         min-width: 150px;
+         gap: 10px;
+         transition: 1s;
+         transform: translate(-100vh);
+      }
+
+   }
 }

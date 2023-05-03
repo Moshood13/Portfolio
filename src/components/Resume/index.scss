@@ -3,6 +3,7 @@
     width: 100%;
     position: absolute;
     z-index: -1;
+    animation: transition 2s;
 
     .name {
         display: flex;
@@ -16,13 +17,15 @@
 
         h2 {
             text-transform: uppercase;
-            color: rgb(255,255,255);
+            color: rgb(255, 255, 255);
         }
-        p{
+
+        p {
             font-size: 16px;
             opacity: 0.6;
         }
     }
+
     .resumeDetails {
         display: flex;
         margin: 20px auto;
@@ -30,7 +33,8 @@
         border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
 
 
-        .details1, .details2 {
+        .details1,
+        .details2 {
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -42,15 +46,18 @@
                 display: flex;
                 gap: 10px;
             }
-            .icon, .infoName {
-                color: rgb(255,255,255);
+
+            .icon,
+            .infoName {
+                color: rgb(255, 255, 255);
             }
         }
     }
-    .overview{
+
+    .overview {
         display: flex;
         margin: 0 auto;
-        padding:  0;
+        padding: 0;
 
         .text {
             color: rgb(185, 175, 175);
@@ -66,14 +73,23 @@
             }
         }
     }
-    .edu, .cert, .skills, .hobby, .referrer {
+
+    .edu,
+    .cert,
+    .skills,
+    .hobby,
+    .referrer {
         display: flex;
         flex-direction: column;
         margin-left: 160px;
         margin-top: 20px;
-        
 
-        .eduLogo, .certLogo, .skillLogo, .hobbyLogo, .referrerLogo {
+
+        .eduLogo,
+        .certLogo,
+        .skillLogo,
+        .hobbyLogo,
+        .referrerLogo {
             display: flex;
             color: rgb(185, 175, 175);
             gap: 10px;
@@ -82,13 +98,18 @@
             .icon {
                 font-size: 2em;
             }
+
             h1 {
                 font-size: 2em;
-                
+
             }
 
         }
-        .eduDetails, .certText, .hobbyText, .referrerText {
+
+        .eduDetails,
+        .certText,
+        .hobbyText,
+        .referrerText {
             display: flex;
             gap: 20px;
             margin: 20px 30px;
@@ -100,7 +121,7 @@
                 display: flex;
             }
 
-            
+
             .eduText {
                 display: flex;
                 flex-direction: column;
@@ -109,11 +130,11 @@
                 gap: 10px;
                 border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
                 padding-bottom: 10px;
-                
+
                 h4 {
                     font-size: 20px;
                 }
-                
+
 
                 .text2 {
                     display: flex;
@@ -122,12 +143,13 @@
 
                     .address {
                         text-align: right;
-                        
+
                     }
                 }
             }
         }
     }
+
     .cert {
 
         .certText {
@@ -142,11 +164,12 @@
                     padding-bottom: 5px;
                     width: 80%;
                 }
-                
+
             }
 
         }
     }
+
     .skills {
 
         display: flex;
@@ -160,7 +183,7 @@
             align-items: center;
             justify-content: space-between;
             border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
-            
+
             .skill {
                 display: flex;
                 flex-direction: column;
@@ -182,15 +205,16 @@
                     &:hover {
                         color: rgb(31, 73, 211);
                     }
-                   
+
                 }
+
                 .stars {
                     font-size: 15px;
                     margin: 0 auto;
                     color: rgba(255, 251, 2, 0.815);
                 }
             }
-            
+
         }
     }
 
@@ -225,4 +249,225 @@
             color: rgb(185, 175, 175);
         }
     }
+
+}
+@keyframes transition{
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    } 
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .resume {
+        background: rgb(22, 22, 22);
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+
+        .name {
+            display: flex;
+            text-align: 100%;
+            font-size: 12px;
+            margin: 10px unset;
+        }
+
+        .resumeDetails {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+
+            .details1, .details2 {
+                margin: 10px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+
+                .info {
+                    display: flex;
+                    margin: 10px 0;
+                }
+
+            }
+            
+        }
+
+        .overview {
+            display: flex;
+            margin: unset;
+            justify-content: center;
+
+            .text {
+                color: rgb(185, 175, 175);
+                display: flex;
+                margin-left: 10px;
+                line-height: 30px;
+                font-size: 16px;
+                padding: 10px 5px;
+                width: 100%;
+    
+                span {
+                    color: rgb(31, 73, 211);
+                }
+            }
+        }
+        .edu,
+        .cert,
+        .skills,
+        .hobby,
+        .referrer {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 20px;
+    
+    
+            .eduLogo,
+            .certLogo,
+            .skillLogo,
+            .hobbyLogo,
+            .referrerLogo {
+                display: flex;
+                color: rgb(185, 175, 175);
+                gap: 10px;
+                margin: 20px 0;
+    
+                .icon {
+                    font-size: 16px;
+                }
+    
+                h1 {
+                    font-size: 16px;
+    
+                }
+    
+            }
+    
+            .eduDetails,
+            .certText,
+            .hobbyText,
+            .referrerText {
+                display: flex;
+                gap: 20px;
+                margin: 20px 0;
+                color: white;
+                align-items: unset;
+    
+                p {
+                    color: rgb(185, 175, 175);
+                    display: flex;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    align-items: center;
+                    display: flex;
+                }
+    
+    
+                .eduText {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: unset;
+                    width: 80%;
+                    gap: 10px;
+                    border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
+                    padding-bottom: 10px;
+    
+                    h4 {
+                        font-size: 14px;
+                    }
+    
+    
+                    .text2 {
+                        display: flex;
+                        flex-direction: column;
+                        color: rgb(185, 175, 175);
+    
+                        .address {
+                            text-align: unset;
+    
+                        }
+                    }
+                }
+            }
+        }
+        .skills {
+    
+            display: flex;
+            
+    
+    
+            .skilldetails {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                color: white;
+                align-items: unset;
+                border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
+                width: 100%;
+                justify-content: space-between;
+                padding-bottom: 30px;
+    
+                .skill {
+                    display: flex;
+                    margin-top: 20px;
+                    padding: unset;
+                    text-align: center;
+    
+                    .skillName {
+                        color: rgb(185, 175, 175);
+                    }
+    
+                    .star {
+                        display: flex;
+                        margin: 10px 0;
+                        font-size: 2.5em;
+                        
+    
+                        &:hover {
+                            color: rgb(31, 73, 211);
+                        }
+    
+                    }
+    
+                    .stars {
+                        font-size: 15px;
+                        margin: 0 unset;
+                        color: rgba(255, 251, 2, 0.815);
+                    }
+                }
+    
+            }
+        }
+        .hobby {
+            display: flex;
+    
+            .hobbyText {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                padding-bottom: 40px;
+                border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
+    
+                h4 {
+                    border: 1px dashed white;
+                    padding: 5px 10px;
+                    margin-bottom: 1px;
+                    color: rgb(185, 175, 175);
+    
+                    &:hover {
+                        background-color: rgb(54, 91, 214);
+                    }
+                }
+            }
+        }
+    }
+
 }
