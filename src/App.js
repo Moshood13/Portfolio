@@ -14,28 +14,27 @@ function App() {
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
 
-  if(spinner) {
+  if (spinner) {
     setTimeout(() => {
       spinner.style.display = "none";
       setLoading(false)
-    },5000)
+    }, 5000)
   }
   return (
     !loading && (
       <>
-    <React.Fragment>
-      <Routes>
-        <Route path='/' element={<Layout />} >
-          <Route index element={<Home />} />
-          <Route path='Contact' element={<Contact />} />
-          <Route path='Profile' element={<Profile />} />
-          <Route path='Resume' element={<Resume />} />
-          <Route path='Portfolio' element={<Portfolio />}>          
-          </Route>
-        </Route>
-      </Routes>
-    </React.Fragment>
-    </>
+        <React.Fragment>
+          <Routes>
+            <Route path='/' element={<Layout />} >
+              <Route index element={<Home />} />
+              <Route path='Contact' element={<Contact />} />
+              <Route path='Profile' element={<Profile />} />
+              <Route path='Resume' element={<Resume />} />
+              <Route path='Portfolio' element={<Portfolio />} />
+            </Route>
+          </Routes>
+        </React.Fragment>
+      </>
     )
   );
 }

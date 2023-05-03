@@ -26,7 +26,7 @@
 }
 
 .name {
-  font-size: 25px;
+  font-size: 20px;
   color: rgb(185, 175, 175);
   text-transform: uppercase;
   font-family: 'Proza Libre', serif;
@@ -38,7 +38,7 @@
   letter-spacing: 1px;
   justify-content: center;
   align-items: center;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .title {
@@ -48,7 +48,6 @@
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  margin-bottom: 10px;
   margin-left: 20px;
 }
 
@@ -140,9 +139,9 @@
 
 .name1 {
   color: rgba(31, 73, 211, 0.63);
-  padding: 0 10px;
+  padding: 0 5px;
   font-family: 'Trirong', serif;
-  border-bottom: 5px solid rgba(185, 175, 175, 0.514);
+  border-bottom: 3px solid rgba(185, 175, 175, 0.514);
 }
 
 .summary {
