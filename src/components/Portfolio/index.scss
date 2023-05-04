@@ -218,17 +218,18 @@
 
 @media only screen and (max-width: 1024px) {
     .portfoilio {
-        width: 100%;
-
+        padding: 0 5px;
 
         .header {
             display: flex;
-            justify-content: space-between;
-            margin: 10px unset;
+            justify-content: space-around;
+            margin: 10px 0px 0px 20px;
             color: rgba(54, 92, 214, 0.63);
             border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
-            width: 70%;
-            padding: 10px 0;
+            width: 95%;
+            padding: 10px 0px 10px 0px;
+
+
 
             h1 {
                 font-size: 1.5em;
@@ -242,8 +243,8 @@
 
         .projects {
             display: flex;
-            justify-content: unset;
-            align-items: unset;
+            justify-content: center;
+            align-items: center;
             margin: 20px unset;
             flex-wrap: wrap;
             gap: 10px;
@@ -280,7 +281,7 @@
                     position: absolute;
                     opacity: 0;
                     height: 80px;
-                    width: 240px;
+                    width: 24g0px;
                     border-radius: 5px;
                     display: flex;
                     flex-direction: column;

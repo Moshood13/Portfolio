@@ -137,17 +137,20 @@
 
 @media only screen and (max-width: 1024px) {
     .contact {
-        width: 100%;
+       padding: 0 5px;
+
 
 
         .contactDetails {
             display: flex;
-            justify-content: space-between;
-            margin: 10px unset;
+            justify-content: space-around;
+            margin: 10px 0px 0px 20px;
             color: rgba(54, 92, 214, 0.63);
             border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
-            width: 70%;
-            padding: 10px 0;
+            width: 95%;
+            padding: 10px 0px 10px 0px;
+
+
 
             h1 {
                 font-size: 1.5em;
