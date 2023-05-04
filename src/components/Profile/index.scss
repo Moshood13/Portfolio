@@ -189,11 +189,11 @@
 
 @media only screen and (max-width: 1024px) {
     .profile {
-        padding-left: 10px;
+        padding: 0 5px;
 
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             margin: 10px 0px 0px 20px;
             color: rgba(54, 92, 214, 0.63);
             border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
@@ -215,8 +215,9 @@
             display: flex;
             flex-direction: column;
             margin: 40px 0;
-            margin-left: 20px;
+            margin-left: 5px;
             color: rgb(185, 175, 175);
+            width: 100%;
 
             h2 {
                 margin-top: 20px;
@@ -225,7 +226,10 @@
                 border-bottom: 1px solid rgb(54, 91, 214);
                 display: inline;
                 width: 260px;
+                text-align: center;
             }
+
+
 
             .PS {
                 flex: unset;
@@ -235,6 +239,8 @@
                 height: unset;
                 padding-right: 15px;
                 text-align: justify;
+                justify-content: center;
+                align-items: center;
 
                 
 
@@ -243,6 +249,7 @@
                     line-height: 20px;
                     font-size: 18px;
                 }
+                
 
             }
 
@@ -253,6 +260,8 @@
                 padding: 10px 10px;
                 gap: 25px;
                 border-bottom: 1px dashed rgba(204, 199, 199, 0.315);
+                justify-content: center;
+                align-items: center;
 
                 .info {
                     display: flex;
@@ -313,7 +322,9 @@
             display: flex;
             flex-direction: column;
             margin: 20px 0;
-            margin-left: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
 
             .header2 {
                 margin: 0;
@@ -324,7 +335,7 @@
                     border-bottom: 1px solid rgb(54, 91, 214);
                     color: rgb(255, 255, 255);
                     font-size: 1.9em;
-                    width: 110px;
+                    width: 130px;
                 }
 
             }

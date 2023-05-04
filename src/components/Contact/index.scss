@@ -4,6 +4,8 @@
     position: absolute;
     z-index: -1;
     animation: transition 2s;
+    height: 100%;
+    
 
     .contactDetails {
         display: flex;
@@ -27,7 +29,6 @@
     .form {
         display: flex;
         margin: 20px 210px;
-        flex-direction: row;
         padding: 0 20px;
 
 
@@ -162,16 +163,16 @@
             margin: 20px 0;
             flex-direction: column;
             padding: 0;
+            text-align: center;
 
 
             h2 {
                 color: rgb(185, 175, 175);
                 border: 1px dashed rgba(204, 199, 199, 0.315);
                 padding: 5px;
-                float: left;
-                width: 200px;
                 text-align: center;
                 margin-bottom: 10px;
+            
 
                 &:hover {
                     background: rgba(54, 92, 214, 0.63);
@@ -184,9 +185,17 @@
                 flex-direction: column;
                 margin: 30px 0;
                 width: 100%;
-                gap: 10px;
+                gap: 30px;
                 border-right: unset;
                 padding-right: 15px;
+                text-align: center;
+                padding: 0 50px;
+
+                h2 {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+               
 
                 .field {
                     padding: 10px;
@@ -196,6 +205,7 @@
                     border-bottom: 1px dashed rgba(54, 92, 214, 0.63);
                     font-size: 16px;
                     color: rgb(185, 175, 175);
+                    
                 }
 
 
@@ -218,16 +228,15 @@
 
             .alternative {
                 display: flex;
-                flex-direction: column;
-                padding: 10px 20px;
+                flex-direction: row;
+                padding: 10px 5px;
                 justify-content: space-around;
                 color: rgb(185, 175, 175);
-                gap: 20px;
 
                 .email {
                     display: flex;
-                    gap: 10px;
-                    font-size: 25px;
+                    flex-direction: column;
+                    font-size: 12px;
 
                     .icon {
                         color: rgba(54, 92, 214, 0.63);
@@ -236,8 +245,8 @@
 
                 .location {
                     display: flex;
-                    gap: 10px;
-                    font-size: 25px;
+                    flex-direction: column;
+                    font-size: 12px;
 
                     .icon {
                         color: rgba(54, 92, 214, 0.63);
@@ -246,8 +255,8 @@
 
                 .call {
                     display: flex;
-                    gap: 10px;
-                    font-size: 25px;
+                    flex-direction: column;
+                    font-size: 12px;
 
                     .icon {
                         color: rgba(54, 92, 214, 0.63);
