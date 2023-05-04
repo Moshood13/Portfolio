@@ -2,8 +2,6 @@ import React from "react";
 import "./index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import Pic1 from "../../Assets/projects/Casio_calculator_JS-20WK_in_201901_002.jpg"
-import Pic2 from "../../Assets/projects/markdown preview.jpg"
 import Pic3 from "../../Assets/projects/Todo app.jpg"
 import Pic4 from "../../Assets/projects/quiz.png"
 import Pic5 from "../../Assets/projects/rqm .jpg"
@@ -44,8 +42,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="link">
-                        <a href="https://github.com/Moshood13/Javascript/tree/Todo" className="link1" title="view source code" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://codepen.io/Moshood13/pen/gOBvYeJ" className="link2" title="view demo" target="_blank"><FontAwesomeIcon icon={faCodepen} /></a>
+                        <a href="https://github.com/Moshood13/Javascript/tree/Todo" className="link1" title="view source code" target="_blank" rel="noreferrer" ><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://codepen.io/Moshood13/pen/gOBvYeJ" className="link2" title="view demo" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCodepen} /></a>
                     </div>
                 </div>
                 <div className="project">
@@ -78,11 +76,9 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="project">
-                    <a href="">
                         <div className="projectImage">
                             <img src={Pic5} alt="" />
                         </div>
-                    </a>
                     <div className="projectDesc">
                         <h1>Random Quote App</h1>
                         <p> Technologies :
@@ -107,7 +103,7 @@ const Portfolio = () => {
                 </div>
             </div>
             <div className="link">
-                <p>To view more <span><em>projects</em></span> click <a href=""> <button disabled="disabled" className="btn">here</button></a></p>
+                <p>To view more <span><em>projects</em></span> click  <button disabled="disabled" className="btn">here</button></p>
             </div>
         </div>
     )
