@@ -21,60 +21,9 @@ const Portfolio = () => {
             </div>
             <div className="projects">
                 <div className="project">
-                    <div className="projectImage">
-                        <img src={Pic1} alt="" />
-                    </div>
-                    <div className="projectDesc">
-                        <h1>Basic Calculator</h1>
-                        <p> Technologies :
-                            <span>Html</span>
-                            <span className="br"></span>
-                            <span>Css</span>
-                            <span className="br"></span>
-                            <span>Javascript</span>
-                        </p>
-                        <div className="details">
-                            <h4>Features : </h4>
-                            <ol>
-                                <li>Performs Basic Calulations</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div className="link">
-                        <a href="" className="link1" title="view source code"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="" className="link2" title="view demo"><FontAwesomeIcon icon={faCodepen} /></a>
-                    </div>
-                </div>
-                <div className="project">
-                    <a href="">
-                        <div className="projectImage">
-                            <img src={Pic2} alt="" />
-                        </div>
-                    </a>
-                    <div className="projectDesc">
-                        <h1>Markdown Previewer</h1>
-                        <p> Technologies :
-                            <span>Html</span>
-                            <span className="br"></span>
-                            <span>Css</span>
-                            <span className="br"></span>
-                            <span>Javascript</span>
-                        </p>
-                        <div className="details">
-                          
-                        </div>
-                    </div>
-                    <div className="link">
-                        <a href="" className="link1" title="view source code"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="" className="link2" title="view demo"><FontAwesomeIcon icon={faCodepen} /></a>
-                    </div>
-                </div>
-                <div className="project">
-                    <a href="">
                         <div className="projectImage">
                             <img src={Pic3} alt="" />
                         </div>
-                    </a>
                     <div className="projectDesc">
                         <h1>Todo App</h1>
                         <p> Technologies :
@@ -124,8 +73,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="link">
-                        <a href="https://github.com/Moshood13/Javascript" className="link1" title="view source code" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://codepen.io/Moshood13/pen/wvYpNVM" className="link2" title="view demo" target="_blank"><FontAwesomeIcon icon={faCodepen} /></a>
+                        <a href="https://github.com/Moshood13/Javascript" className="link1" title="view source code" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://codepen.io/Moshood13/pen/wvYpNVM" className="link2" title="view demo" target="_blank" rel="noreferrer" ><FontAwesomeIcon icon={faCodepen} /></a>
                     </div>
                 </div>
                 <div className="project">
@@ -152,8 +101,8 @@ const Portfolio = () => {
                         </div>
                     </div>
                     <div className="link">
-                        <a href="" className="link1" title="view source code"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="" className="link2" title="view demo"><FontAwesomeIcon icon={faCodepen} /></a>
+                        <a href="https://github.com/Moshood13/Javascript/tree/RQM" className="link1" title="view source code" target="_blank" rel="noreferrer" ><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://codepen.io/Moshood13/pen/KKGQbMB" className="link2" title="view demo" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faCodepen} /></a>
                     </div>
                 </div>
             </div>

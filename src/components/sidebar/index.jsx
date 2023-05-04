@@ -55,15 +55,15 @@ const Sidebar = () => {
 
 
                 <div className="mediaIcons">
-                    <a target='_blank' href='https://twitter.com/its_DjMosh' className='icon'>
+                    <a target='_blank' href='https://twitter.com/its_DjMosh' className='icon' rel="noreferrer">
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
-                    <a target="_blank" href="https://github.com/Moshood13" className="icon">
+                    <a target="_blank" href="https://github.com/Moshood13" className="icon" rel="noreferrer">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
-                    <a target='_blank' href='https://www.linkedin.com/in/moshoodkareem13' className='icon'><FontAwesomeIcon icon={faLinkedin} />
+                    <a target='_blank' href='https://www.linkedin.com/in/moshoodkareem13' className='icon' rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} />
                     </a>
-                    <a target='_blank' href='https://wa.me/2349075464649' className='icon'>
+                    <a target='_blank' href='https://wa.me/2349075464649' className='icon' rel="noreferrer">
                         <FontAwesomeIcon icon={faWhatsapp} />
                     </a>
                 </div>

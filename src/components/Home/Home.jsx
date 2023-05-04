@@ -1,7 +1,5 @@
 import React from "react";
 import "./home.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faGreaterThan, faLessThan } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import cv from "../../Assets/files/MoshoodKareem.pdf"
 
