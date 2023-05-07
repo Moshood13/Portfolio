@@ -44,6 +44,8 @@
             flex-direction: column;
             border-right: 2px dotted rgba(204, 199, 199, 0.315);
             height: 70vh;
+            padding-right: 15px;
+            text-align: justify;
 
             .ct {
                 margin: 20spx 0;
@@ -185,16 +187,16 @@
 
 @media only screen and (max-width: 1024px) {
     .profile {
-
+        padding-left: 10px;
 
         .header {
             display: flex;
             justify-content: space-between;
-            margin: 10px unset;
+            margin: 10px 0px 0px 20px;
             color: rgba(54, 92, 214, 0.63);
             border-bottom: 2px dotted rgba(204, 199, 199, 0.315);
-            width: 70%;
-            padding: 10px 0;
+            width: 95%;
+            padding: 10px 0px 10px 0px;
 
             h1 {
                 font-size: 1.5em;
@@ -227,6 +229,8 @@
                 flex-direction: column;
                 border-right: 2px dotted rgba(204, 199, 199, 0.315);
                 height: unset;
+                padding-right: 15px;
+                text-align: justify;
 
                 p {
                     line-height: 20px;
